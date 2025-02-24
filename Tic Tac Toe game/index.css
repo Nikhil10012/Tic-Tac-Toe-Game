@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 320px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.turn-indicator {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+ 
+   /* Removes any space between grid items */
+  margin-bottom: 20px;
+}
+
+.cell {
+  box-sizing: border-box; /* Ensures borders are included in the width/height */
+  background: #e0f7fa;
+  border: 2px solid #006064;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+
+.cell:hover {
+  background: #b2ebf2;
+  transform: scale(1.05);
+}
+
+.cell.X {
+  color: #d32f2f;
+}
+
+.cell.O {
+  color: #1976d2;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #006064;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 280px;
+}
+
+.popup-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

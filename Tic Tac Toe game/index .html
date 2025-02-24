@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+      <div class="info">
+        <div class="turn-indicator">
+          Current Turn: <span id="currentTurn">X</span>
+        </div>
+        <div class="scoreboard">
+          <div>Player X: <span id="scoreX">0</span></div>
+          <div>Player O: <span id="scoreO">0</span></div>
+          <div>Draws: <span id="drawCount">0</span></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="row">
+          <div onclick="handleClick(this)" id="0" class="cell"></div>
+          <div onclick="handleClick(this)" id="1" class="cell"></div>
+          <div onclick="handleClick(this)" id="2" class="cell"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="3" class="cell"></div>
+          <div onclick="handleClick(this)" id="4" class="cell"></div>
+          <div onclick="handleClick(this)" id="5" class="cell"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="6" class="cell"></div>
+          <div onclick="handleClick(this)" id="7" class="cell"></div>
+          <div onclick="handleClick(this)" id="8" class="cell"></div>
+        </div>
+      </div>
+      <button id="resetBtn" onclick="resetGameAll()">Restart Game</button>
+    </div>
+
+    <!-- Popup for game result -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">OK</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
