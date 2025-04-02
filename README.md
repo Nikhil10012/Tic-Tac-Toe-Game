@@ -10,8 +10,8 @@ A simple, interactive, and responsive **Tic Tac Toe** game built using **HTML, C
 - **Restart game functionality**
 - **Mobile-friendly and responsive design**
 
-<!--## 🚀 Live Demo
-[Play Tic Tac Toe](#) -->
+## 🚀 Live Demo
+🔗 [Check it out on Netlify](https://tictactoenik.netlify.app/)
 
 ## 🛠️ Technologies Used
 - **HTML** - Structure of the game
@@ -36,6 +36,9 @@ A simple, interactive, and responsive **Tic Tac Toe** game built using **HTML, C
    open index.html
    ```
    OR simply **double-click** on `index.html` to run in a browser.
+   
+## 🚀 Deployment
+Deployed using **Netlify** with **continuous deployment from GitHub**.
 
 ## 📜 How to Play
 1. **Click** on any empty cell to make your move.
@@ -50,10 +53,16 @@ A simple, interactive, and responsive **Tic Tac Toe** game built using **HTML, C
 - Implement **score tracking**
 - Add **theme customization**
 
+## 👨‍💻 Author
+**Nikhil Kumar**  
+🔗 [GitHub](https://github.com/Nikhil10012) | [LinkedIn](https://www.linkedin.com/in/nikhil-kumar-184a96224/)
 
 ## 💡 Contributing
 Feel free to **fork** this repository, improve the game, and submit a **pull request**!
 
-## ⭐ Show Your Support
-If you like this project, give it a **star ⭐** and share it with others!
+---
+**📌 If you like this project, don't forget to ⭐ the repo!** 🚀
+
+
+
 
